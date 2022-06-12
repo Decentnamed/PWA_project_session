@@ -3,7 +3,7 @@
     "background_color": "#f69435",
     "display": "browser",
     "scope": "/",
-    "start_url": "/https://decentnamed.github.io/PWA_project_session/",
+    "start_url": "https://decentnamed.github.io/PWA_project_session/",
     "name": "Dawid Grabowicz programing languages blog",
     "short_name": "codeApp",
     "description": "PWA project",
