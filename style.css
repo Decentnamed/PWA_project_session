@@ -1,0 +1,109 @@
+/*czcionka z google font - mozna ja tez wkleic do html ale wtedy inaczej trzeba, jest napisane na stronie google fonts jak*/
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+/* dla wszystkich - resetowanie wszystkich marginesow itd*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg'); /*link do zdjecia musi byc z rozszerzeniem jpg itp */
+    background-position: 80% center;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 10px;
+}
+/*każdy h1 który znajdzie sie w headerze */
+header h1 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.247);
+    /*padding: 50px 0;*/
+    height: 90vh;
+    line-height: 90vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px white;
+}
+
+/*klasa zdjecie*/
+.img-python{
+    background-image: url('https://wallpaperaccess.com/full/796849.jpg');
+    height: 40vh;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-java{
+    background-image: url('https://wallpapercave.com/wp/wp6599799.jpg');
+    height: 40vh;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-csharp{
+    background-image: url('https://infoshareacademy.com/wp-content/uploads/2022/01/1920x1080-Bootcamp-C.png');
+    height: 40vh;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-cplusplus{
+    background-image: url('https://wallpapercave.com/wp/wp4002978.jpg');
+    height: 40vh;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+h3 {
+    padding: 20px;
+}
+
+/* wszystkie paragrafy ktore znajduja sie w klasie cofe */
+.coding-language p {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/*dla footera*/
+footer {
+    padding: 20px 30px;
+    background: rgb(83, 79, 79);
+    margin-top: 10px;
+}
+
+/*każdy paragraf który znajdzie sie w stopce */
+footer p {
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*
+rozdzielcozsc bootstrap - przy zwiekszaniu rozdzielczosci pomaga polepszyc widok strony
+nic,all - dla wszystkich urzadzen, print - drukarki, jeszcze jest screen itp
+Break point 768px, sa jeszcze 3 inne na bootstrapie
+ */
+@media (min-width: 768px){
+    /* dla maina */
+    main{
+        display: flex; /* flex -  bez flex direcion poniżej jest kolumnowy uklad */
+        flex-direction: row; /* domyślny układ poziomy. column - kolumnowy */
+        flex-wrap: wrap;
+    }
+
+    .coding-language{
+        width: 50%; /*Jeżeli chcemy max 2 kolumny to 50%, jeżeli chcemy np 3 kolumny to 33%. Kolumny pojawia sie po przekroczeniu 768px szerokosci ekranu. itd */
+        padding: 20px;
+    }
+
+    /*Dla 33% zostaje 1% przez co zostaje taki bialy margines.
+     Wtedy zamiast procentu 33% mozna wpisac - calc(100% / 3) - funkcja css, ktora oblicza nam te procenty i nie ma niepotrzebnego marginesu*/
+}
