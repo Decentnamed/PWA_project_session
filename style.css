@@ -20,7 +20,7 @@ header h1 {
     background-color: rgba(255, 255, 255, 0.247);
     /*padding: 50px 0;*/
     height: 90vh;
-    line-height: 90vh;
+    /*line-height: 90vh;*/
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 1px 1px 2px white;
